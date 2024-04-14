@@ -1,42 +1,58 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
+
 #root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
   text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100dvh;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
-}
-
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+#quote-box {
+  transition: width 0.1s ease-in-out, height 0.1s ease-in-out 0.1s;
+  box-shadow: 0px 2px gray 5px;
+  background-color: #b2b3c2;
+  padding: 2rem 3rem;
+  border-radius: 25px;
+  max-width: 60dvw;
+  min-width: 50dvw;
+  max-height: 70dvh;
+  min-height: 20dvh;
+  display: grid;
+  grid-template-columns: min-content 1fr min-content;
+  grid-template-rows: 1fr min-content min-content;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+#text {
+  text-align: center;
+  grid-column: 1 / 4;
 }
 
-.card {
-  padding: 2em;
+div#author {
+  grid-column: 3;
+  grid-row: 2 / 3;
+  font-style: italic;
+}
+div#author > p {
+  text-wrap: nowrap;
+  font-size: clamp(.8rem, 1vw, 1.5rem);
 }
 
-.read-the-docs {
-  color: #888;
+#new-quote {
+  grid-column: 3 / 3;
+  grid-row: 3;
+  text-wrap: nowrap;
+}
+
+#tweet-quote {
+  grid-column: 1;
+  grid-row: 3;
+}
+
+#tweet-quote > svg:hover {
+  box-shadow: 1px 2px gray 3px;
+}
+
+#new-quote {
+  color: beige;
 }
