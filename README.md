@@ -12,6 +12,7 @@ You can use any mix of HTML, JavaScript, CSS, Bootstrap, SASS, React, Redux, and
 
 - React *(duh)*
 - React Redux
+- [TypeScript](https://c.tenor.com/m-MS3l7pLAUAAAAC/tenor.gif)
 
 ## Run on your machine locally
 
